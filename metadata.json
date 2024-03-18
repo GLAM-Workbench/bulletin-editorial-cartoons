@@ -2,7 +2,7 @@
     "title": "GLAM Workbench Data Explorer",
     "description_html": "<p>This database contains a collection of 3,471 full-page editorial cartoons downloaded from from <i>The Bulletin</i>, 1886 to 1952.<p><b>Warning!</b></p><p>The language, images, and ideas presented in <i>The Bulletin</i> were often racist, anti-Semitic, and sexist. You won't have to look far within this collection to find something offensive. This was, after all, the journal whose slogan for many years was 'Australia for the white man'.</p>",
     "source": "Editorial cartoons from The Bulletin, 1886 to 1952",
-    "source_url": "https://glam-workbench/trove-journals/bulletin-cartoons-collection/",
+    "source_url": "https://glam-workbench.net/trove-journals/bulletin-cartoons-collection/",
     "databases": {
         "bulletin_editorial_cartoons": {
             "tables": {
