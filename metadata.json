@@ -4,10 +4,11 @@
     "source": "Editorial cartoons from The Bulletin, 1886 to 1952",
     "source_url": "https://glam-workbench.net/trove-journals/bulletin-cartoons-collection/",
     "databases": {
-        "bulletin_editorial_cartoons": {
+        "bulletin-editorial-cartoons": {
             "tables": {
                 "cartoons": {
-                    "sort": "date"
+                    "sort": "date",
+                    "searchmode": "raw"
                 }
             }
         }
