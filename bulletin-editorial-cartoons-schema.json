@@ -1,0 +1,44 @@
+{
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "description": "NLA identifier for the page image containing the cartoon"
+    },
+    {
+      "name": "date",
+      "type": "date",
+      "description": "date the issue was published"
+    },
+    {
+      "name": "issue_number",
+      "type": "string",
+      "description": "publication issue number"
+    },
+    {
+      "name": "issue_id",
+      "type": "string",
+      "description": "NLA identifier for the issue"
+    },
+    {
+      "name": "page",
+      "type": "integer",
+      "description": "number of the page containing the cartoon"
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "description": "url to open the page in Trove's digitised object viewer"
+    },
+    {
+      "name": "download_image",
+      "type": "string",
+      "description": "url to download a high-resolution page image"
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "description": "OCRd text extracted from the page"
+    }
+  ]
+}

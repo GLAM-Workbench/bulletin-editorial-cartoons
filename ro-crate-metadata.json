@@ -1,0 +1,324 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-7956-4498"
+                }
+            ],
+            "datePublished": "2024-03-19",
+            "description": "This dataset includes a collection of 3,471 full-page editorial cartoons downloaded from issues of *The Bulletin* published between 1886 and 1952. In most cases there is one cartoon per issue. Metadata describing each image is available in a CSV-fromatted file, and in an SQLite database that can be explored using Datasette-Lite. The full collection of high-resolution images can be downloaded as a single 62gb zip file.",
+            "distribution": {
+                "@id": "https://github.com/GLAM-Workbench/bulletin-editorial-cartoons/archive/refs/heads/main.zip"
+            },
+            "hasPart": [
+                {
+                    "@id": "https://github.com/GLAM-Workbench/trove-journals/blob/master/Finding_editorial_cartoons_in_the_Bulletin.ipynb"
+                },
+                {
+                    "@id": "bulletin-editorial-cartoons.csv"
+                },
+                {
+                    "@id": "bulletin-editorial-cartoons.db"
+                },
+                {
+                    "@id": "https://trove-journals.s3.ap-southeast-2.amazonaws.com/bulletin_cartoons.zip"
+                },
+                {
+                    "@id": "bulletin-editorial-cartoons-schema.json"
+                }
+            ],
+            "isBasedOn": {
+                "@id": "https://github.com/GLAM-Workbench/trove-journals/"
+            },
+            "license": {
+                "@id": "https://spdx.org/licenses/MIT"
+            },
+            "mainEntityOfPage": {
+                "@id": "https://glam-workbench.net/trove-journals/bulletin-cartoons-collection/"
+            },
+            "name": "bulletin-editorial-cartoons",
+            "url": "https://github.com/GLAM-Workbench/bulletin-editorial-cartoons/",
+            "workExample": [
+                {
+                    "@id": "https://glam-workbench.net/datasette-lite/?url=https://github.com/GLAM-Workbench/bulletin-editorial-cartoons/blob/main/bulletin-editorial-cartoons.db&install=datasette-json-html&metadata=https://raw.githubusercontent.com/GLAM-Workbench/bulletin-editorial-cartoons/main/metadata.json#/bulletin-editorial-cartoons/cartoons"
+                },
+                {
+                    "@id": "https://www.dropbox.com/s/altjl6jixwv5pt0/bulletin-1886-1889.pdf?dl=0"
+                },
+                {
+                    "@id": "https://www.dropbox.com/s/p15swmact2c9euf/bulletin-1890-1899.pdf?dl=0"
+                },
+                {
+                    "@id": "https://www.dropbox.com/s/0rivg50s8qam2et/bulletin-1900-1909.pdf?dl=0"
+                },
+                {
+                    "@id": "https://www.dropbox.com/s/pdsj6xjot0l928w/bulletin-1910-1919.pdf?dl=0"
+                },
+                {
+                    "@id": "https://www.dropbox.com/s/64x9y5nvgez1q3o/bulletin-1920-1929.pdf?dl=0"
+                },
+                {
+                    "@id": "https://www.dropbox.com/s/8mytp5qhqcrctt3/bulletin-1930-1939.pdf?dl=0"
+                },
+                {
+                    "@id": "https://www.dropbox.com/s/go3vyuqq0td6oqd/bulletin-1940-1949.pdf?dl=0"
+                },
+                {
+                    "@id": "https://www.dropbox.com/s/klcv0gyjs81c0pm/bulletin-1950-1952.pdf?dl=0"
+                }
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "license": {
+                "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+            }
+        },
+        {
+            "@id": "https://github.com/GLAM-Workbench/trove-journals/blob/master/Finding_editorial_cartoons_in_the_Bulletin.ipynb",
+            "@type": [
+                "File",
+                "SoftwareSourceCode"
+            ],
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-7956-4498"
+                }
+            ],
+            "category": "Harvesting images",
+            "codeRepository": "https://github.com/GLAM-Workbench/trove-journals/",
+            "conformsTo": {
+                "@id": "https://purl.archive.org/textcommons/profile#Notebook"
+            },
+            "description": "This notebook describes a method for finding and saving full-page editorial cartoons from *The Bulletin*.",
+            "encodingFormat": "application/x-ipynb+json",
+            "mainEntityOfPage": {
+                "@id": "https://glam-workbench.net/trove-journals/finding-editorial-cartoons-in-bulletin/"
+            },
+            "name": "Finding editorial cartoons in the Bulletin",
+            "position": 8,
+            "programmingLanguage": {
+                "@id": "https://www.python.org/downloads/release/python-31012/"
+            },
+            "url": "https://github.com/GLAM-Workbench/trove-journals/blob/master/Finding_editorial_cartoons_in_the_Bulletin.ipynb",
+            "workExample": []
+        },
+        {
+            "@id": "bulletin-editorial-cartoons.csv",
+            "@type": [
+                "File",
+                "Dataset"
+            ],
+            "conformsTo": {
+                "@id": "bulletin-editorial-cartoons-schema.json"
+            },
+            "contentSize": 1917989,
+            "dateModified": "2024-03-19",
+            "encodingFormat": "text/csv",
+            "name": "bulletin-editorial-cartoons.csv",
+            "sdDatePublished": "2024-03-19",
+            "size": 3472,
+            "url": "https://github.com/GLAM-Workbench/bulletin-editorial-cartoons/raw/main/bulletin-editorial-cartoons.csv"
+        },
+        {
+            "@id": "bulletin-editorial-cartoons.db",
+            "@type": [
+                "File",
+                "Dataset"
+            ],
+            "contentSize": 3522560,
+            "dateModified": "2024-03-19",
+            "description": "This is an SQLite database formatted for use with Datasette-Lite. As well as metadata from the `bulletin-editorial-cartoons.csv` file it includes a thumbnail column to display the cartoon.",
+            "name": "bulletin-editorial-cartoons.db",
+            "sdDatePublished": "2024-03-19",
+            "url": "https://github.com/GLAM-Workbench/bulletin-editorial-cartoons/raw/main/bulletin-editorial-cartoons.db"
+        },
+        {
+            "@id": "https://trove-journals.s3.ap-southeast-2.amazonaws.com/bulletin_cartoons.zip",
+            "@type": [
+                "File",
+                "Dataset"
+            ],
+            "contentSize": 62312351569,
+            "dateModified": "2024-03-14",
+            "description": "This dataset contains high-resolution images of 3,471 full-page editorial cartoons harvested from *The Bulletin*, 1886 to 1952.\n\nThe names of each image file provide useful contextual metadata. For example, the file name `19330412-2774-nla.obj-606969767-7.jpg` tells you:\n\n* `19330412` \u2013 the cartoon was published on 12 April 1933\n* `2774` \u2013 it was published in issue number 2774\n* `nla.obj-606969767` \u2013 the Trove identifier for the issue, can be used to make a url eg `https://nla.gov.au/nla.obj-606969767`\n* `7` \u2013 on page 7",
+            "encodingFormat": "application/zip",
+            "name": "bulletin_cartoons.zip",
+            "sdDatePublished": "2024-03-19",
+            "url": "https://trove-journals.s3.ap-southeast-2.amazonaws.com/bulletin_cartoons.zip"
+        },
+        {
+            "@id": "bulletin-editorial-cartoons-schema.json",
+            "@type": [
+                "File"
+            ],
+            "conformsTo": {
+                "@id": "https://specs.frictionlessdata.io/table-schema/"
+            },
+            "encodingFormat": "application/json",
+            "name": "Frictionless Table Schema for bulletin-editorial-cartoons.csv dataset",
+            "url": "https://github.com/GLAM-Workbench/bulletin-editorial-cartoons/raw/main/bulletin-editorial-cartoons-schema.json"
+        },
+        {
+            "@id": "https://orcid.org/0000-0001-7956-4498",
+            "@type": "Person",
+            "mainEntityOfPage": "https://timsherratt.au",
+            "name": "Sherratt, Tim",
+            "orcid": "https://orcid.org/0000-0001-7956-4498"
+        },
+        {
+            "@id": "https://github.com/GLAM-Workbench/trove-journals/",
+            "@type": "Dataset",
+            "name": "trove-journals",
+            "url": "https://github.com/GLAM-Workbench/trove-journals/"
+        },
+        {
+            "@id": "https://github.com/GLAM-Workbench/bulletin-editorial-cartoons/archive/refs/heads/main.zip",
+            "@type": "DataDownload",
+            "name": "Download repository as zip",
+            "url": "https://github.com/GLAM-Workbench/bulletin-editorial-cartoons/archive/refs/heads/main.zip"
+        },
+        {
+            "@id": "https://spdx.org/licenses/MIT",
+            "@type": "CreativeWork",
+            "name": "MIT License",
+            "url": "https://spdx.org/licenses/MIT.html"
+        },
+        {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "@type": "CreativeWork",
+            "name": "CC0 Public Domain Dedication",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        {
+            "@id": "http://rightsstatements.org/vocab/NKC/1.0/",
+            "@type": "CreativeWork",
+            "description": "The organization that has made the Item available reasonably believes that the Item is not restricted by copyright or related rights, but a conclusive determination could not be made.",
+            "name": "No Known Copyright",
+            "url": "http://rightsstatements.org/vocab/NKC/1.0/"
+        },
+        {
+            "@id": "http://rightsstatements.org/vocab/CNE/1.0/",
+            "@type": "CreativeWork",
+            "description": "The copyright and related rights status of this Item has not been evaluated.",
+            "name": "Copyright Not Evaluated",
+            "url": "http://rightsstatements.org/vocab/CNE/1.0/"
+        },
+        {
+            "@id": "https://www.python.org/downloads/release/python-31012/",
+            "@type": [
+                "ComputerLanguage",
+                "SoftwareApplication"
+            ],
+            "name": "Python 3.10.12",
+            "url": "https://www.python.org/downloads/release/python-31012/",
+            "version": "3.10.12"
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-journals/finding-editorial-cartoons-in-bulletin/",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net"
+            },
+            "name": "Finding editorial cartoons in the Bulletin",
+            "url": "https://glam-workbench.net/trove-journals/finding-editorial-cartoons-in-bulletin/"
+        },
+        {
+            "@id": "#Finding_editorial_cartoons_in_the_Bulletin_run_0",
+            "@type": "CreateAction",
+            "actionStatus": {
+                "@id": "http://schema.org/CompletedActionStatus"
+            },
+            "endDate": "2024-03-19",
+            "instrument": {
+                "@id": "https://github.com/GLAM-Workbench/trove-journals/blob/master/Finding_editorial_cartoons_in_the_Bulletin.ipynb"
+            },
+            "name": "Run of notebook: Finding_editorial_cartoons_in_the_Bulletin.ipynb",
+            "result": [
+                {
+                    "@id": "bulletin-editorial-cartoons.csv"
+                },
+                {
+                    "@id": "bulletin-editorial-cartoons.db"
+                },
+                {
+                    "@id": "https://trove-journals.s3.ap-southeast-2.amazonaws.com/bulletin_cartoons.zip"
+                }
+            ]
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-journals/bulletin-cartoons-collection/",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net"
+            },
+            "name": "Editorial cartoons from The Bulletin, 1886 to 1952",
+            "url": "https://glam-workbench.net/trove-journals/bulletin-cartoons-collection/"
+        },
+        {
+            "@id": "https://glam-workbench.net/datasette-lite/?url=https://github.com/GLAM-Workbench/bulletin-editorial-cartoons/blob/main/bulletin-editorial-cartoons.db&install=datasette-json-html&metadata=https://raw.githubusercontent.com/GLAM-Workbench/bulletin-editorial-cartoons/main/metadata.json#/bulletin-editorial-cartoons/cartoons",
+            "@type": "CreativeWork",
+            "name": "Explore using Datasette",
+            "url": "https://glam-workbench.net/datasette-lite/?url=https://github.com/GLAM-Workbench/bulletin-editorial-cartoons/blob/main/bulletin-editorial-cartoons.db&install=datasette-json-html&metadata=https://raw.githubusercontent.com/GLAM-Workbench/bulletin-editorial-cartoons/main/metadata.json#/bulletin-editorial-cartoons/cartoons"
+        },
+        {
+            "@id": "https://www.dropbox.com/s/altjl6jixwv5pt0/bulletin-1886-1889.pdf?dl=0",
+            "@type": "CreativeWork",
+            "name": "Download from Dropbox: 1886 to 1889 (45mb PDF)",
+            "url": "https://www.dropbox.com/s/altjl6jixwv5pt0/bulletin-1886-1889.pdf?dl=0"
+        },
+        {
+            "@id": "https://www.dropbox.com/s/p15swmact2c9euf/bulletin-1890-1899.pdf?dl=0",
+            "@type": "CreativeWork",
+            "name": "Download from Dropbox: 1890 to 1899 (139mb PDF)",
+            "url": "https://www.dropbox.com/s/p15swmact2c9euf/bulletin-1890-1899.pdf?dl=0"
+        },
+        {
+            "@id": "https://www.dropbox.com/s/0rivg50s8qam2et/bulletin-1900-1909.pdf?dl=0",
+            "@type": "CreativeWork",
+            "name": "Download from Dropbox: 1900 to 1909 (147mb PDF)",
+            "url": "https://www.dropbox.com/s/0rivg50s8qam2et/bulletin-1900-1909.pdf?dl=0"
+        },
+        {
+            "@id": "https://www.dropbox.com/s/pdsj6xjot0l928w/bulletin-1910-1919.pdf?dl=0",
+            "@type": "CreativeWork",
+            "name": "Download from Dropbox: 1910 to 1919 (153mb PDF)",
+            "url": "https://www.dropbox.com/s/pdsj6xjot0l928w/bulletin-1910-1919.pdf?dl=0"
+        },
+        {
+            "@id": "https://www.dropbox.com/s/64x9y5nvgez1q3o/bulletin-1920-1929.pdf?dl=0",
+            "@type": "CreativeWork",
+            "name": "Download from Dropbox: 1920 to 1929 (159mb PDF)",
+            "url": "https://www.dropbox.com/s/64x9y5nvgez1q3o/bulletin-1920-1929.pdf?dl=0"
+        },
+        {
+            "@id": "https://www.dropbox.com/s/8mytp5qhqcrctt3/bulletin-1930-1939.pdf?dl=0",
+            "@type": "CreativeWork",
+            "name": "Download from Dropbox: 1930 to 1939 (151mb PDF)",
+            "url": "https://www.dropbox.com/s/8mytp5qhqcrctt3/bulletin-1930-1939.pdf?dl=0"
+        },
+        {
+            "@id": "https://www.dropbox.com/s/go3vyuqq0td6oqd/bulletin-1940-1949.pdf?dl=0",
+            "@type": "CreativeWork",
+            "name": "Download from Dropbox: 1940 to 1949 (146mb PDF)",
+            "url": "https://www.dropbox.com/s/go3vyuqq0td6oqd/bulletin-1940-1949.pdf?dl=0"
+        },
+        {
+            "@id": "https://www.dropbox.com/s/klcv0gyjs81c0pm/bulletin-1950-1952.pdf?dl=0",
+            "@type": "CreativeWork",
+            "name": "Download from Dropbox: 1950 to 1952 (42mb PDF)",
+            "url": "https://www.dropbox.com/s/klcv0gyjs81c0pm/bulletin-1950-1952.pdf?dl=0"
+        }
+    ]
+}
